@@ -5,11 +5,7 @@ project(rclc)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # macro for GNU
-if(NOT _GNU_SOURCE)
-  add_definitions(-D_GNU_SOURCE)
-  add_definitions(-D__BSD_VISIBLE)
-  add_definitions(-D_DEFAULT_SOURCE)
-endif()
+add_definitions(-D_GNU_SOURCE)
 
 #################################################
 # compiler settings

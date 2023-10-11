@@ -18,7 +18,7 @@
 
 #ifdef WIN32
 #include <Windows.h>
-#elif defined(__BSD_VISIBLE)
+#elif defined(_GNU_SOURCE)
 #include <sys/unistd.h>
 #else
 #include <unistd.h>
