@@ -22,8 +22,6 @@
 #include <unistd.h>
 #endif
 
-#include <unistd.h>
-
 void
 rclc_sleep_ms(
   unsigned int ms)
