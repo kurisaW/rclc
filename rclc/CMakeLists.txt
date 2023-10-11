@@ -3,8 +3,13 @@ cmake_minimum_required(VERSION 3.5)
 project(rclc)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-add_definitions(-D__BSD_VISIBLE)
-add_definitions(-D_DEFAULT_SOURCE)
+
+# macro for GNU
+if(NOT _GNU_SOURCE)
+  add_definitions(-D_GNU_SOURCE)
+  add_definitions(-D__BSD_VISIBLE)
+  add_definitions(-D_DEFAULT_SOURCE)
+endif()
 
 #################################################
 # compiler settings
