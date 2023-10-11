@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 project(rclc)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
+add_definitions(-D__BSD_VISIBLE)
 
 #################################################
 # compiler settings
@@ -19,7 +20,6 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_definitions(-D__BSD_VISIBLE)
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
