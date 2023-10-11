@@ -19,6 +19,7 @@
 #ifdef WIN32
 #include <Windows.h>
 #elif defined(_GNU_SOURCE)
+#error "unistd.h"
 #include <unistd.h>
 #else
 #include <unistd.h>

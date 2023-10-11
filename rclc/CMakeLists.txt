@@ -4,8 +4,6 @@ project(rclc)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
-# macro for GNU
-add_definitions(-D_GNU_SOURCE)
 
 #################################################
 # compiler settings
@@ -49,6 +47,9 @@ endif()
 #################################################
 # create library
 #################################################
+
+# macro for GNU
+add_definitions(-D_GNU_SOURCE)
 
 add_library(${PROJECT_NAME}
   src/rclc/init.c
