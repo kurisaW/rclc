@@ -18,6 +18,8 @@
 
 #ifdef WIN32
 #include <Windows.h>
+#elif defined(__BSD_VISIBLE)
+#include <unistd.h>
 #else
 #include <unistd.h>
 #endif
