@@ -22,7 +22,9 @@
 #include <unistd.h>
 #endif
 
-#include <sys/unistd.h>
+#ifdef __unix__
+#include <unistd.h>
+#endif
 
 void
 rclc_sleep_ms(
