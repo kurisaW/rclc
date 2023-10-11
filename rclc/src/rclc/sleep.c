@@ -18,8 +18,6 @@
 
 #ifdef WIN32
 #include <Windows.h>
-#elif defined(_GNU_SOURCE)
-#include <unistd.h>
 #else
 #include <unistd.h>
 #endif

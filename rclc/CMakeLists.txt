@@ -48,9 +48,6 @@ endif()
 # create library
 #################################################
 
-# macro for GNU
-add_definitions(-D_GNU_SOURCE)
-
 add_library(${PROJECT_NAME}
   src/rclc/init.c
   src/rclc/publisher.c
