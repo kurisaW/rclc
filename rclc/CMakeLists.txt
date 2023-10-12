@@ -48,8 +48,6 @@ endif()
 # create library
 #################################################
 
-add_definitions(-D__cplusplus)
-
 add_library(${PROJECT_NAME}
   src/rclc/init.c
   src/rclc/publisher.c
