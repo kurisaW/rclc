@@ -16,10 +16,16 @@
 
 #include "rclc/sleep.h"
 
+
+
 #ifdef WIN32
 #include <Windows.h>
 #else
 #include <unistd.h>
+#endif
+
+#if defined(__cplusplus)
+#error "__cplusplus defined"
 #endif
 
 void
