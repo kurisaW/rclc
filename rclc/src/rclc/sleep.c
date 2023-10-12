@@ -24,8 +24,9 @@
 #include <unistd.h>
 #endif
 
-#if defined(__cplusplus)
-#warning "__cplusplus defined"
+#ifdef __USE_XOPEN
+#include <sys/types.h>
+int usleep (useconds_t __useconds);
 #endif
 
 void

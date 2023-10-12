@@ -48,6 +48,8 @@ endif()
 # create library
 #################################################
 
+add_definitions(-D__USE_XOPEN)
+
 add_library(${PROJECT_NAME}
   src/rclc/init.c
   src/rclc/publisher.c
