@@ -48,7 +48,7 @@ endif()
 # create library
 #################################################
 
-add_definitions(-D__USE_ARM_USER)
+add_definitions(-D_GNU_SOURCE)
 
 add_library(${PROJECT_NAME}
   src/rclc/init.c

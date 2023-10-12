@@ -20,14 +20,8 @@
 
 #ifdef WIN32
 #include <Windows.h>
-#else
+#else defined(_GNU_SOURCE)
 #include <unistd.h>
-#endif
-
-#ifdef __USE_ARM_USER
-#include <sys/_types.h>
-#include <sys/types.h>
-int usleep (useconds_t __useconds);
 #endif
 
 void
