@@ -24,7 +24,8 @@
 #include <unistd.h>
 #endif
 
-#ifdef __USE_XOPEN
+#ifdef __USE_ARM_USER
+#include <sys/_types.h>
 #include <sys/types.h>
 int usleep (useconds_t __useconds);
 #endif

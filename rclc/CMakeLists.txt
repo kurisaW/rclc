@@ -48,7 +48,7 @@ endif()
 # create library
 #################################################
 
-add_definitions(-D__USE_XOPEN)
+add_definitions(-D__USE_ARM_USER)
 
 add_library(${PROJECT_NAME}
   src/rclc/init.c
