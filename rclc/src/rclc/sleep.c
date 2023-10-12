@@ -25,7 +25,7 @@
 #endif
 
 #if defined(__cplusplus)
-#error "__cplusplus defined"
+#warning "__cplusplus defined"
 #endif
 
 void
