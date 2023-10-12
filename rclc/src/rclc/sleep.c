@@ -20,7 +20,10 @@
 
 #ifdef WIN32
 #include <Windows.h>
-#else defined(_GNU_SOURCE)
+#elif defined(_GNU_SOURCE)
+#include <unistd.h>
+#include <rtthread>
+#else
 #include <unistd.h>
 #endif
 
