@@ -20,9 +20,6 @@
 
 #ifdef WIN32
 #include <Windows.h>
-#elif defined(_GNU_SOURCE)
-#include <unistd.h>
-#include <rtthread.h>
 #else
 #include <unistd.h>
 #endif
